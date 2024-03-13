@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/react-dog-api.git/static/css/main.2978f93b.css",
-    "main.js": "/react-dog-api.git/static/js/main.882d3f2d.js",
-    "index.html": "/react-dog-api.git/index.html",
-    "main.2978f93b.css.map": "/react-dog-api.git/static/css/main.2978f93b.css.map",
-    "main.882d3f2d.js.map": "/react-dog-api.git/static/js/main.882d3f2d.js.map"
+    "main.css": "/react-dog-api/static/css/main.2978f93b.css",
+    "main.js": "/react-dog-api/static/js/main.882d3f2d.js",
+    "index.html": "/react-dog-api/index.html",
+    "main.2978f93b.css.map": "/react-dog-api/static/css/main.2978f93b.css.map",
+    "main.882d3f2d.js.map": "/react-dog-api/static/js/main.882d3f2d.js.map"
   },
   "entrypoints": [
     "static/css/main.2978f93b.css",
