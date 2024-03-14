@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-dog-api/static/css/main.2978f93b.css",
-    "main.js": "/react-dog-api/static/js/main.882d3f2d.js",
+    "main.js": "/react-dog-api/static/js/main.e34a7015.js",
     "index.html": "/react-dog-api/index.html",
     "main.2978f93b.css.map": "/react-dog-api/static/css/main.2978f93b.css.map",
-    "main.882d3f2d.js.map": "/react-dog-api/static/js/main.882d3f2d.js.map"
+    "main.e34a7015.js.map": "/react-dog-api/static/js/main.e34a7015.js.map"
   },
   "entrypoints": [
     "static/css/main.2978f93b.css",
-    "static/js/main.882d3f2d.js"
+    "static/js/main.e34a7015.js"
   ]
 }
