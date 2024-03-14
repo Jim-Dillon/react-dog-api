@@ -50,7 +50,7 @@ const App = () => {
         <div className='dog-card__row1'>
           <h1>Find a Dog</h1>
           <p>Are the kids hassling you for a dog but you can't tell a labrador from a doberman? Scroll through the list of options below for a look at each of the breeds.</p>
-          <p className='disclaimer'>Photos courtesy of <a href='https://dog.ceo/dog-api/'>Dog Ceo API</a>.</p>
+          <p className='disclaimer'>Photos courtesy of <a href='https://dog.ceo/dog-api/' target="_blank" rel="noopener noreferrer">Dog Ceo API</a>.</p>
           <Dropdown breeds={breeds} selectedBreed={selectedBreed} onBreedChange={handleBreedChange} />
         </div>
         {error ? (
