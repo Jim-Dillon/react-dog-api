@@ -51,6 +51,12 @@ img {
     width: 350px;
 }
 
+.error-message {
+    color: red;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 24px;
+}
+
 
 @media (min-width: 955px) {
     .container {
