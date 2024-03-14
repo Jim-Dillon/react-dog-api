@@ -24,3 +24,7 @@ jobs:
           branch: gh-pages
           folder: build
           clean: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS }}
+
+              
