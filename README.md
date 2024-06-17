@@ -1,8 +1,8 @@
 # Dynamic Dog Selection App
 
-The project simulates a dog browsing tool, where you can selection dog breeds from a dropdown and render an accompanying photo 
+The project simulates a dog browsing tool, where you can select dog breeds from a dropdown and render an accompanying photo. 
 
-Bootstrapped with Create React App, this app uses Tanstack Query for state managment and data fetching
+Bootstrapped with Create React App, this app uses Tanstack Query for state managment and data fetching. All data is fetched from the [Dog CEO API](https://dog.ceo/dog-api/)
 
 ## Usage 
 1. Clone this repo
