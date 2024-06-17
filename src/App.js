@@ -1,41 +1,14 @@
 import React, { useState } from 'react';
-import { useQuery } from '@tanstack/react-query';
-import Dropdown from './Dropdown';
-import DogImage from './DogImage';
+import { useFetchBreeds } from './hooks/useFetchBreeds';
+import { useFetchDogImage } from './hooks/useFetchDogImage';
+import Dropdown from './components/Dropdown';
+import DogImage from './components/DogImage';
 import './App.css';
-
-const fetchBreeds = async () => {
-  const response = await fetch('https://dog.ceo/api/breeds/list/all');
-  if (!response.ok) {
-    throw new Error('Failed to fetch breeds');
-  }
-  const data = await response.json();
-  return Object.keys(data.message);
-};
-
-const fetchDogImage = async ({ queryKey }) => {
-  const breed = queryKey[1];
-  const response = await fetch(`https://dog.ceo/api/breed/${breed}/images/random`);
-  if (!response.ok) {
-    throw new Error('Failed to fetch dog image');
-  }
-  const data = await response.json();
-  return data.message;
-};
 
 const App = () => {
   const [selectedBreed, setSelectedBreed] = useState('');
-
-  const { data: breeds, error: breedsError, isLoading: isBreedsLoading } = useQuery({
-    queryKey: ['breeds'],
-    queryFn: fetchBreeds
-  });
-
-  const { data: dogImage, error: dogImageError, refetch: refetchDogImage } = useQuery({
-    queryKey: ['dogImage', selectedBreed],
-    queryFn: fetchDogImage,
-    enabled: !!selectedBreed
-  });
+  const { data: breeds, error: breedsError, isLoading: isBreedsLoading } = useFetchBreeds();
+  const { data: dogImage, error: dogImageError, refetch: refetchDogImage } = useFetchDogImage(selectedBreed)
 
   const handleBreedChange = (event) => {
     setSelectedBreed(event.target.value);
