@@ -1,27 +1,14 @@
-h1 {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-}
-
-p {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-a:visited {
-    color: black;
-}
-
-select {
-    border-radius: 8px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    height: 40px;
-    margin: 0 auto;
-    width: 290px;
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    display: block;
-    margin: 40px auto;
+    margin: 40px 0;
     width: 390px;
 }
 
@@ -33,6 +20,32 @@ select {
     margin: 0 auto;
     padding: 25px;
     width: 290px;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a:visited {
+    color: black;
+}
+
+select {
+    border-radius: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 40px;
+    margin: 0 auto;
+    width: 290px;
+}
+
+.dropdown {
+    max-height: 200px;
+    overflow-y: auto !important;
 }
 
 .disclaimer {
@@ -54,7 +67,7 @@ img {
 
 .error-message {
     color: red;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-top: 24px;
 }
 
@@ -70,7 +83,7 @@ img {
         width: 650px;
     }
 
-    .content > * {
+    .content>* {
         flex-basis: 50%;
     }
 
@@ -78,7 +91,8 @@ img {
         width: 300px;
     }
 
-    .dog-image, img {
+    .dog-image,
+    img {
         width: 300px;
     }
 }
